@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="container">
+    <section className="container py-12">
       <div className="mx-auto bg-white rounded-3xl p-4 md:p-8">
         <div className="flex flex-col items-center text-center">
           {/* Two-line heading instead of three */}
@@ -39,13 +39,6 @@ const Hero = () => {
             <source src="/heroVideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          
-          {/* Large responsive text overlay */}
-          <div className="absolute bottom-0 left-0 w-full h-1/2 flex items-end p-4 mix-blend-difference">
-            <p className="text-white text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight leading-tight">
-              Hi8 Studio
-            </p>
-          </div>
         </div>
       </div>
     </section>
