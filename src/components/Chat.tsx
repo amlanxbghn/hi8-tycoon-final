@@ -70,7 +70,7 @@ const AnimatedMessage: React.FC<AnimatedMessageProps> = ({ children, isUser = fa
 
 const Chat = () => {
   // Calculate delays for each message (300ms between each)
-  const messageDelay = 200;
+  const messageDelay = 100;
 
   return (
     <div className="min-h-screen container mx-auto py-12">

@@ -12,14 +12,14 @@ const About = () => {
           </div>
           
           <div className="sm:w-3/4">
-            <div className="space-y-16 bg-gradient-to-br from-orange-400 to-orange-600 text-transparent bg-clip-text pb-8">
-              <p className="text-4xl lg:text-6xl font-medium leading-tight">
+            <div className="space-y-12 bg-gradient-to-br from-yellow-400 via-orange-500 to-[#FF0012] text-transparent bg-clip-text pb-8">
+              <p className="text-3xl md:text-4xl lg:text-6xl font-medium leading-tight">
                 Hi8 is a youth-driven marketing agency transforming how brands
                 connect with consumers. We blend creativity and digital expertise
                 to engage the new generation.
               </p>
               
-              <p className="text-4xl lg:text-6xl font-medium leading-tight">
+              <p className="text-3xl md:text-4xl lg:text-6xl font-medium leading-tight">
                 Our disruptive campaigns help brands stand out, lead in their
                 industries, and stay ahead in a fast-changing digital world.
               </p>
