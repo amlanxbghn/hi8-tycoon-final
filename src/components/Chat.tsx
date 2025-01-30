@@ -3,26 +3,30 @@ import { MessageCircle } from "lucide-react";
 
 const Chat = () => {
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen container mx-auto py-12">
       {/* Header */}
-      <div className="max-w-2xl mx-auto mb-12">
-        <h1 className="text-4xl lg:text-6xl font-medium leading-tight text-gray-900 mb-2">
+      <div className="md:px-1 max-w-2xl mx-auto mb-14">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900 mb-2">
           Seamless Onboarding
         </h1>
-        <h2 className="text-2xl lg:text-4xl font-semibold text-[#FF0012]/50">
-          Always at Your Service
+        <h2 className="text-md md:text-xl font-medium text-[#FF0012]">
+          Start Your Project within Minutes
         </h2>
       </div>
 
       {/* Chat Container */}
-      <div className="max-w-2xl mx-auto space-y-6">
+      <div className="max-w-3xl mx-auto space-y-6">
         {/* AI Message */}
         <div className="flex items-start space-x-3">
-          <div className="w-10 h-10 rounded-full bg-[#FF0012]/50 flex items-center justify-center">
-            <MessageCircle className="w-5 h-5 text-white" />
+          <div className="w-10 h-10 rounded-full overflow-hidden">
+            <img
+              src="/api/placeholder/32/32"
+              alt="Hi8"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-sm max-w-[80%]">
-            <p className="text-2xl text-gray-800">
+            <p className="text-md md:text-2xl text-gray-900">
               Hi! Welcome to Hi8 – your new creative partner in social media
               marketing. 🚀
             </p>
@@ -31,12 +35,16 @@ const Chat = () => {
 
         {/* AI Question */}
         <div className="flex items-start space-x-3">
-          <div className="w-10 h-10 rounded-full bg-[#FF0012]/50 flex items-center justify-center">
-            <MessageCircle className="w-5 h-5 text-white" />
+          <div className="w-10 h-10 rounded-full overflow-hidden">
+            <img
+              src="/api/placeholder/32/32"
+              alt="Hi8"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-sm max-w-[80%]">
-            <p className="text-2xl text-gray-800">
-              How’s your brand’s social presence today?
+            <p className="text-md md:text-2xl text-gray-900">
+              How's your brand's social presence today?
             </p>
           </div>
         </div>
@@ -44,27 +52,27 @@ const Chat = () => {
         {/* User Response */}
         <div className="flex items-start space-x-3 justify-end">
           <div className="bg-white rounded-2xl p-4 shadow-sm max-w-[80%]">
-            <p className="text-2xl text-gray-800">Great!</p>
+            <p className="text-md md:text-2xl text-gray-900">Great!</p>
           </div>
-          <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden">
-            <img
-              src="/api/placeholder/32/32"
-              alt="User avatar"
-              className="w-full h-full object-cover"
-            />
+          <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center">
+            <MessageCircle className="w-5 h-5 text-gray-900" />
           </div>
         </div>
 
         {/* AI Response */}
         <div className="flex items-start space-x-3">
-          <div className="w-10 h-10 rounded-full bg-[#FF0012]/50 flex items-center justify-center">
-            <MessageCircle className="w-5 h-5 text-white" />
+          <div className="w-10 h-10 rounded-full overflow-hidden">
+            <img
+              src="/api/placeholder/32/32"
+              alt="Hi8"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-sm max-w-[80%]">
-            <p className="text-2xl text-gray-800">
-              Awesome! That’s what we love to hear.
+            <p className="text-md md:text-2xl text-gray-900">
+              Awesome! That's what we love to hear.
               <br />
-              📈 Social media moves fast, and we’re here to make sure you stay
+              📈 Social media moves fast, and we're here to make sure you stay
               ahead with content that grabs attention and drives engagement.
             </p>
           </div>
@@ -73,29 +81,29 @@ const Chat = () => {
         {/* User Question */}
         <div className="flex items-start space-x-3 justify-end">
           <div className="bg-white rounded-2xl p-4 shadow-sm max-w-[80%]">
-            <p className="text-2xl text-gray-800">
+            <p className="text-md md:text-2xl text-gray-900">
               How can we improve our content strategy?
             </p>
           </div>
-          <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden">
-            <img
-              src="/api/placeholder/32/32"
-              alt="User avatar"
-              className="w-full h-full object-cover"
-            />
+          <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center">
+            <MessageCircle className="w-5 h-5 text-gray-900" />
           </div>
         </div>
 
         {/* AI Response with Tag */}
         <div className="flex items-start space-x-3">
-          <div className="w-10 h-10 rounded-full bg-[#FF0012]/50 flex items-center justify-center">
-            <MessageCircle className="w-5 h-5 text-white" />
+          <div className="w-10 h-10 rounded-full overflow-hidden">
+            <img
+              src="/api/placeholder/32/32"
+              alt="Hi8"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-sm max-w-[80%]">
-            <div className="text-blue-500 text-sm mb-2">
-              ✦ Based on your brand’s current approach
+            <div className="text-[#FF0012] text-sm mb-2">
+              ✦ Based on your brand's current approach
             </div>
-            <p className="text-2xl text-gray-800">
+            <p className="text-md md:text-2xl text-gray-900">
               We recommend integrating high-impact short-form videos, optimized
               for engagement and ...
             </p>

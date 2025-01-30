@@ -3,7 +3,7 @@ import React from "react";
 const SecurityPage = () => {
   return (
     <div className="bg-white">
-      <div className="max-w-6xl mx-auto p-6">
+      <div className="container mx-auto py-12">
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-8 items-center">
           {/* Mascot Section */}
           <div className="flex justify-center mt-12 md:mt-0">
@@ -38,7 +38,7 @@ const SecurityPage = () => {
           <div className="space-y-8">
             <div className="text-blue-500 text-lg">Empower Your Brand.</div>
 
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
               Unstoppable Growth.
               <br />
               Complete Control.

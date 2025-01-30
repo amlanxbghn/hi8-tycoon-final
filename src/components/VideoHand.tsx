@@ -5,7 +5,7 @@ const VideoHand = () => {
     <div className="relative w-full min-h-[600px] bg-gradient-to-br from-orange-50/50 to-orange-200 flex justify-center items-end overflow-hidden pt-32">
       {/* Background Text */}
       <div className="absolute inset-0 flex items-center justify-center select-none">
-        <span className="font-bold text-orange-300/50 text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] xl:text-[12rem] whitespace-nowrap">
+        <span className="container mx-auto text-center font-bold text-orange-300/50 text-[45px] md:text-[120px] lg:text-[160px] xl:text-[200px]">
           Grow with us.
         </span>
       </div>
