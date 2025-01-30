@@ -65,7 +65,7 @@ interface FeatureCardProps {
 
 const FeatureCard = ({ title, description }: FeatureCardProps) => (
   <div className="mb-8 lg:mb-0">
-    <h2 className="text-[#F12C00] text-lg font-medium mb-2">{title}</h2>
+    <h2 className="text-[#FF0012] text-lg font-medium mb-2">{title}</h2>
     <p className="text-gray-700 leading-relaxed">{description}</p>
   </div>
 );

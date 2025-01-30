@@ -20,7 +20,7 @@ const Hero = () => {
             <button className="w-50 px-8 py-2.5 rounded-xl bg-white text-lg font-medium border border-gray-200 hover:bg-gray-50 transition-colors">
               View Works
             </button>
-            <button className="w-50 px-8 py-2.5 rounded-xl bg-[#EA3D25] text-white text-lg font-medium hover:bg-[#C4321F] transition-colors">
+            <button className="w-50 px-8 py-2.5 rounded-xl bg-[#FF0012] text-white text-lg font-medium hover:bg-[#C4321F] transition-colors">
               Schedule a Call
             </button>
           </div>

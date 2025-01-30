@@ -1,6 +1,6 @@
 import React from "react";
 
-const ResponsiveText = () => {
+const About = () => {
   return (
     <div className="min-h-screen bg-white">
       <div className="container mx-auto py-12">
@@ -16,7 +16,7 @@ const ResponsiveText = () => {
               <p className="text-4xl lg:text-6xl font-medium leading-tight">
                 Hi8 is a youth-driven marketing agency transforming how brands
                 connect with consumers. We blend creativity and digital expertise
-                to engage the next generation.
+                to engage the new generation.
               </p>
               
               <p className="text-4xl lg:text-6xl font-medium leading-tight">
@@ -31,4 +31,4 @@ const ResponsiveText = () => {
   );
 };
 
-export default ResponsiveText;
+export default About;

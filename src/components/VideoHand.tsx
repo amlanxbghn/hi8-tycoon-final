@@ -2,15 +2,20 @@ import React from 'react';
 
 const VideoHand = () => {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-pink-50 to-pink-100 flex justify-center items-center">
-      <div className="
-        ml-24 md:ml-40 lg:ml-52
-        w-[400px] md:w-[500px] lg:w-[600px]
-      ">
-        <img 
-          src="/handPhone.png" 
+    <div className="relative w-full min-h-[600px] bg-gradient-to-br from-orange-50/50 to-orange-200 flex justify-center items-end overflow-hidden pt-32">
+      {/* Background Text */}
+      <div className="absolute inset-0 flex items-center justify-center select-none">
+        <span className="font-bold text-orange-300/50 text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] xl:text-[12rem] whitespace-nowrap">
+          Grow with us.
+        </span>
+      </div>
+      
+      {/* Phone Container */}
+      <div className="relative ml-24 md:ml-36 lg:ml-44 w-[280px] sm:w-[320px] md:w-[400px] lg:w-[500px] z-10">
+        <img
+          src="/handPhone.png"
           alt="Hand holding phone mockup"
-          className="w-full h-auto object-contain"
+          className=""
         />
       </div>
     </div>
