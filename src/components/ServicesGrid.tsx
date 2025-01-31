@@ -78,7 +78,7 @@ const ServicesGrid = () => {
           </h2>
         </div>
         {service.title === 'Explore Our Services' && (
-          <img src="/studio.svg" alt="Studio" className="w-full h-auto" />
+          <img src="/studio.png" alt="Studio" className="w-full h-auto" />
         )}
         {service.description && (
           <div className="p-4 md:p-8 flex justify-between items-center gap-4">
