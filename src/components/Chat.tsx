@@ -16,7 +16,6 @@ const AnimatedMessage: React.FC<AnimatedMessageProps> = ({ children, isUser = fa
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // Add delay before starting animation
           setTimeout(() => {
             if (ref.current) {
               ref.current.classList.add("animate-in");
@@ -48,19 +47,15 @@ const AnimatedMessage: React.FC<AnimatedMessageProps> = ({ children, isUser = fa
       }`}
     >
       {!isUser && (
-        <div className="w-10 h-10 rounded-full overflow-hidden">
-          <img
-            src="/api/placeholder/32/32"
-            alt="Hi8"
-            className="w-full h-full object-cover"
-          />
+        <div className="w-10 h-10 rounded-full bg-[#FA9214] shadow-md flex items-center justify-center">
+          <MessageCircle className="w-5 h-5 text-white" />
         </div>
       )}
-      <div className="bg-white rounded-2xl p-4 shadow-sm max-w-[80%]">
+      <div className="bg-white rounded-2xl p-4 shadow-md max-w-[80%]">
         {children}
       </div>
       {isUser && (
-        <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center">
+        <div className="w-10 h-10 rounded-full bg-gray-200 shadow-md flex items-center justify-center">
           <MessageCircle className="w-5 h-5 text-gray-900" />
         </div>
       )}
@@ -69,46 +64,39 @@ const AnimatedMessage: React.FC<AnimatedMessageProps> = ({ children, isUser = fa
 };
 
 const Chat = () => {
-  // Calculate delays for each message (300ms between each)
   const messageDelay = 100;
 
   return (
     <div className="min-h-screen container mx-auto py-12">
-      {/* Header */}
-      <div className="md:px-1 max-w-2xl mx-auto mb-14">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900 mb-2">
+      <div className="max-w-3xl mx-auto mb-14">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900">
           Seamless Onboarding
         </h1>
-        <h2 className="text-md md:text-xl font-medium text-[#FF0012]">
-          Start Your Project within Minutes
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight bg-gradient-to-br from-[#FA9214] via-orange-500 to-[#FF0012] text-transparent bg-clip-text">
+          Start Your Project within Minutes.
         </h2>
       </div>
 
-      {/* Chat Container */}
       <div className="max-w-3xl mx-auto space-y-6">
-        {/* AI Message */}
         <AnimatedMessage delay={messageDelay * 0}>
-          <p className="text-lg md:text-2xl text-gray-900">
+          <p className="text-lg md:text-2xl font-medium text-gray-900">
             Hi! Welcome to Hi8 – your new creative partner in social media
             marketing. 🚀
           </p>
         </AnimatedMessage>
 
-        {/* AI Question */}
         <AnimatedMessage delay={messageDelay * 1}>
-          <p className="text-lg md:text-2xl text-gray-900">
+          <p className="text-lg md:text-2xl font-medium text-gray-900">
             How's your brand's social presence today?
           </p>
         </AnimatedMessage>
 
-        {/* User Response */}
         <AnimatedMessage isUser delay={messageDelay * 2}>
-          <p className="text-lg md:text-2xl text-gray-900">Great!</p>
+          <p className="text-lg md:text-2xl font-medium text-gray-900">Great!</p>
         </AnimatedMessage>
 
-        {/* AI Response */}
         <AnimatedMessage delay={messageDelay * 3}>
-          <p className="text-lg md:text-2xl text-gray-900">
+          <p className="text-lg md:text-2xl font-medium text-gray-900">
             Awesome! That's what we love to hear.
             <br />
             📈 Social media moves fast, and we're here to make sure you stay
@@ -116,19 +104,17 @@ const Chat = () => {
           </p>
         </AnimatedMessage>
 
-        {/* User Question */}
         <AnimatedMessage isUser delay={messageDelay * 4}>
-          <p className="text-lg md:text-2xl text-gray-900">
+          <p className="text-lg md:text-2xl font-medium text-gray-900">
             How can we improve our content strategy?
           </p>
         </AnimatedMessage>
 
-        {/* AI Response with Tag */}
         <AnimatedMessage delay={messageDelay * 5}>
-          <div className="text-[#FF0012] text-sm mb-2">
+          <div className="text-[#FF0012] font-medium mb-2">
             ✦ Based on your brand's current approach
           </div>
-          <p className="text-lg md:text-2xl text-gray-900">
+          <p className="text-lg md:text-2xl font-medium text-gray-900">
             We recommend integrating high-impact short-form videos, optimized
             for engagement and ...
           </p>

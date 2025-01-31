@@ -62,14 +62,14 @@ const StockChart = () => (
 const BentoGrid = () => {
   return (
     <div className="container mx-auto py-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Hero Section - Full Width */}
-        <div className="md:col-span-2 bg-blue-500 rounded-3xl p-8 h-72"></div>
+        <div className="md:col-span-2 bg-[#2797FE] rounded-3xl p-8 h-72"></div>
 
         {/* Two Column Section */}
         <div className="bg-white rounded-3xl p-8 flex flex-col items-center justify-center text-center">
           <ProgressCircle />
-          <h2 className="mt-8 text-5xl font-semibold leading-tight md:max-w-lg mx-auto">
+          <h2 className="mt-8 text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tighter md:max-w-lg mx-auto">
             50% of all businesses miss out on their true marketing potential.
             <br />
             <span className="text-4xl text-emerald-500">
@@ -78,12 +78,12 @@ const BentoGrid = () => {
           </h2>
         </div>
 
-        <div className="bg-[#FA9214] rounded-3xl p-8 flex flex-col h-full">
+        <div className="bg-gradient-to-br from-[#FA9214] via-orange-500 to-[#FF0012] rounded-3xl p-8 lex flex-col h-full">
           <div className="flex flex-col h-full">
-            <h2 className="text-white text-5xl font-semibold leading-tight mb-4">
-              Partner with Hi8 and watch your brand soar.
+            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tighter mb-4">
+              Partner with Hi8 <br/>and watch your Brand soar.
             </h2>
-            <p className="text-white text-xl mb-2">Start a Project with Us</p>
+            <p className="text-white lg:text-2xl font-bold mb-2">Start a Project with Us</p>
             <StockChart />
             <div className="mt-auto">
               <button className="text-white text-xl flex items-center group">

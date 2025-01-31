@@ -3,7 +3,7 @@ import React from "react";
 const VideoHand = () => {
   return (
     <div className="px-4">
-      <div className="relative w-full min-h-[600px] bg-gradient-to-br from-orange-50/50 to-orange-200 flex justify-center items-end overflow-hidden pt-32 rounded-3xl">
+      <div className="relative w-full min-h-[600px] bg-gradient-to-br from-gray-100 to-orange-200 flex justify-center items-end overflow-hidden pt-32 rounded-3xl">
         {/* Background Text */}
         <div className="absolute inset-0 flex items-center justify-center select-none">
           <span className="container mx-auto text-center font-bold text-orange-300/50 text-[45px] md:text-[120px] lg:text-[160px] xl:text-[200px]">

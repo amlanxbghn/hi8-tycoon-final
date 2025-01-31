@@ -17,11 +17,11 @@ export default function Home() {
       <Hero />
       <About />
       <SuccessPage />
-      <ServicesGrid />
       <VideoHand />
+      <ServicesGrid />
       <Features />
-      <BentoGrid />
       <Chat />
+      <BentoGrid />
       <SecurityPage />
       <PocketHero />
       <FeaturesGrid />
