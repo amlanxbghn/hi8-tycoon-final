@@ -47,7 +47,7 @@ const AnimatedMessage: React.FC<AnimatedMessageProps> = ({ children, isUser = fa
       }`}
     >
       {!isUser && (
-        <div className="w-10 h-10 rounded-full bg-[#F90200] shadow-sm md:shadow-md flex items-center justify-center">
+        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#FA9214] to-[#F90200] shadow-sm md:shadow-md flex items-center justify-center">
           <MessageCircle className="w-5 h-5 text-white" />
         </div>
       )}
