@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useEffect, useRef } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
 interface Service {
@@ -60,44 +62,78 @@ const ServicesGrid = () => {
     },
   ];
 
-  const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => (
-    <div
-      className={`relative overflow-hidden rounded-3xl h-full ${service.backgroundColor}`}
-    >
-      <div className={`h-full flex flex-col ${service.textColor}`}>
-        <div className="px-4 md:px-8 pt-4 md:pt-8">
-          <h2 className={`text-2xl lg:text-4xl font-semibold tracking-tight leading-tight whitespace-pre-line ${service.textStyle || ''}`}>
+  const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
+    const titleRef = useRef<HTMLHeadingElement>(null);
+
+    useEffect(() => {
+      if (service.title !== 'Explore Our Services') return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            if (titleRef.current) {
+              titleRef.current.classList.add('animate-in');
+            }
+          }
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+
+      if (titleRef.current) {
+        observer.observe(titleRef.current);
+      }
+
+      return () => {
+        if (titleRef.current) {
+          observer.unobserve(titleRef.current);
+        }
+      };
+    }, [service.title]);
+
+    return (
+      <div
+        className={`relative overflow-hidden rounded-3xl h-full ${service.backgroundColor}`}
+      >
+        <div className={`h-full flex flex-col ${service.textColor}`}>
+          <div className="px-4 md:px-8 pt-4 md:pt-8">
             {service.title === 'Explore Our Services' ? (
-              <>
+              <h2 
+                ref={titleRef}
+                className={`${service.textStyle} opacity-0 translate-y-4 transition-all duration-700 ease-out`}
+              >
                 <span>Explore Our </span>
                 <span className="bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text">Services</span>
-              </>
+              </h2>
             ) : (
-              service.title
+              <h2 className={`text-2xl lg:text-4xl font-semibold tracking-tight leading-tight whitespace-pre-line ${service.textStyle || ''}`}>
+                {service.title}
+              </h2>
             )}
-          </h2>
-        </div>
-        {service.title === 'Explore Our Services' && (
-          <img src="/studio.svg" alt="Studio" className="w-full h-auto" />
-        )}
-        {service.description && (
-          <div className="p-4 md:p-8 flex justify-between items-center gap-4">
-            <p className="font-medium md:text-lg flex-1">
-              {service.description}
-            </p>
-            <div className="relative w-8 h-8 md:w-12 md:h-12 group overflow-hidden cursor-pointer flex-shrink-0">
-              <div className="transition-transform duration-300 absolute inset-0 translate-y-full group-hover:translate-y-0">
-                <ArrowUpRight className="w-8 h-8 md:w-12 md:h-12" />
-              </div>
-              <div className="transition-transform duration-300 absolute inset-0 group-hover:-translate-y-full">
-                <ArrowUpRight className="w-8 h-8 md:w-12 md:h-12" />
+          </div>
+          {service.title === 'Explore Our Services' && (
+            <img src="/studio.svg" alt="Studio" className="w-full h-auto" />
+          )}
+          {service.description && (
+            <div className="p-4 md:p-8 flex justify-between items-center gap-4">
+              <p className="font-medium md:text-lg flex-1">
+                {service.description}
+              </p>
+              <div className="relative w-8 h-8 md:w-12 md:h-12 group overflow-hidden cursor-pointer flex-shrink-0">
+                <div className="transition-transform duration-300 absolute inset-0 translate-y-full group-hover:translate-y-0">
+                  <ArrowUpRight className="w-8 h-8 md:w-12 md:h-12" />
+                </div>
+                <div className="transition-transform duration-300 absolute inset-0 group-hover:-translate-y-full">
+                  <ArrowUpRight className="w-8 h-8 md:w-12 md:h-12" />
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <div className="container mx-auto py-16">
