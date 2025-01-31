@@ -12,7 +12,7 @@ const About = () => {
           </div>
 
           <div className="sm:w-3/4">
-            <div className="space-y-12 bg-gradient-to-br from-[#FA9214] via-orange-500 to-[#F90200] text-transparent bg-clip-text pb-12">
+            <div className="space-y-12 bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text pb-12">
               <p className="text-3xl md:text-4xl lg:text-6xl font-medium leading-tighter">
                 Hi8 is a marketing agency driven by young-creatives transforming
                 how brands connect with consumers. We blend creativity and

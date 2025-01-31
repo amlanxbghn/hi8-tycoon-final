@@ -5,7 +5,8 @@ interface Service {
   title: string;
   description: string;
   featured: boolean;
-  gradient: string;
+  backgroundColor: string;
+  textColor: string;
 }
 
 interface ServiceCardProps {
@@ -18,25 +19,29 @@ const ServicesGrid = () => {
       title: 'EXPLORE OUR\nSERVICES',
       description: '',
       featured: true,
-      gradient: 'bg-white'
+      backgroundColor: 'bg-white',
+      textColor: 'text-black'
     },
     {
       title: 'BRAND IDENTITY\nCREATION',
       description: 'CRAFTING UNIQUE AND\nMEMORABLE BRAND IDENTITIES',
       featured: false,
-      gradient: 'bg-white'
+      backgroundColor: 'bg-white',
+      textColor: 'text-black'
     },
     {
       title: 'WEB DESIGN\n& DEVELOPMENT',
       description: 'CRAFTING UNIQUE AND\nMEMORABLE BRAND IDENTITIES',
       featured: false,
-      gradient: 'bg-[#F90200]'
+      backgroundColor: 'bg-gradient-to-br from-[#FA9214] to-[#F90200]',
+      textColor: 'text-white'
     },
     {
       title: 'CONTENT\nMARKETING',
       description: 'ENSURING INTUITIVE AND\nDELIGHTFUL USER EXPERIENCES',
       featured: false,
-      gradient: 'bg-white'
+      backgroundColor: 'bg-white',
+      textColor: 'text-black'
     }
   ];
 
@@ -47,12 +52,10 @@ const ServicesGrid = () => {
   );
 
   const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => (
-    <div 
-      className={`relative overflow-hidden p-8 rounded-3xl h-full ${service.gradient}`}
+    <div
+      className={`relative overflow-hidden p-8 rounded-3xl h-full ${service.backgroundColor}`}
     >
-      <div className={`h-full flex flex-col ${
-        service.gradient === 'bg-white' ? 'text-black' : 'text-white'
-      }`}>
+      <div className={`h-full flex flex-col ${service.textColor}`}>
         <h2 className="text-2xl lg:text-4xl font-semibold tracking-tight leading-tight whitespace-pre-line mb-4">
           {service.title}
         </h2>
@@ -72,12 +75,9 @@ const ServicesGrid = () => {
   return (
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {/* Left column - Featured card */}
         <div className="h-full">
           <ServiceCard service={services[0]} />
         </div>
-        
-        {/* Right column - Stack of cards */}
         <div className="flex flex-col gap-4">
           {services.slice(1).map((service, index) => (
             <div key={index} className="flex-1">

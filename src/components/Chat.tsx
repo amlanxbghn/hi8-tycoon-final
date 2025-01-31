@@ -47,7 +47,7 @@ const AnimatedMessage: React.FC<AnimatedMessageProps> = ({ children, isUser = fa
       }`}
     >
       {!isUser && (
-        <div className="w-10 h-10 rounded-full bg-[#FA9214] shadow-sm md:shadow-md flex items-center justify-center">
+        <div className="w-10 h-10 rounded-full bg-[#F90200] shadow-sm md:shadow-md flex items-center justify-center">
           <MessageCircle className="w-5 h-5 text-white" />
         </div>
       )}
@@ -72,7 +72,7 @@ const Chat = () => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900">
           Seamless Onboarding
         </h1>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight bg-gradient-to-br from-[#FA9214] via-orange-500 to-[#F90200] text-transparent bg-clip-text">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text">
           Start Your Project within Minutes.
         </h1>
       </div>

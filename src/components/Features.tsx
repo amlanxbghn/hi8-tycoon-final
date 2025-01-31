@@ -69,7 +69,7 @@ const Features: React.FC = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900">
             Unmatched Expertise
           </h1>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight bg-gradient-to-br from-[#FA9214] via-orange-500 to-[#F90200] text-transparent bg-clip-text pb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text pb-4">
             The Advantages of Choosing Us
           </h1>
           <p className="text-lg md:text-2xl text-gray-900 max-w-4xl mx-auto">
