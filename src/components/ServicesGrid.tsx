@@ -13,6 +13,16 @@ interface ServiceCardProps {
   service: Service;
 }
 
+const features = [
+    "Social Media Management",
+    "SEO Optimization",
+    "Email Marketing",
+    "PPC Campaigns",
+    "Marketing Analytics",
+    "Content Strategy",
+    "Lead Generation",
+  ];
+
 const ServicesGrid = () => {
   const services: Service[] = [
     {
@@ -45,12 +55,6 @@ const ServicesGrid = () => {
     }
   ];
 
-  const AbstractImage = () => (
-    <div className="absolute bottom-0 right-0 w-64 h-64 opacity-30">
-      <div className="absolute w-32 h-32 rounded-full bg-white/10 bottom-8 right-8" />
-    </div>
-  );
-
   const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => (
     <div
       className={`relative overflow-hidden p-8 rounded-3xl h-full ${service.backgroundColor}`}
@@ -68,12 +72,11 @@ const ServicesGrid = () => {
           </div>
         )}
       </div>
-      {service.featured && <AbstractImage />}
     </div>
   );
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="h-full">
           <ServiceCard service={services[0]} />
@@ -86,6 +89,19 @@ const ServicesGrid = () => {
           ))}
         </div>
       </div>
+      <div className="mt-4 flex flex-wrap gap-4 justify-center">
+          {features.map((feature) => (
+            <div
+              key={feature}
+              className="bg-white border border-white/10 inline-flex px-3 md:px-5 py-1.5 md:py-2 rounded-2xl gap-3 items-center hover:scale-105 transition duration-500 group"
+            >
+              <span className="bg-gradient-to-br from-[#FA9214] to-[#F90200] text-white size-7 rounded-full inline-flex items-center justify-center text-xl group-hover:rotate-45 transition duration-500">
+                ✦
+              </span>
+              <span className="font-medium md:text-lg">{feature}</span>
+            </div>
+          ))}
+        </div>
     </div>
   );
 };
