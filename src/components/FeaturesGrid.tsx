@@ -105,15 +105,17 @@ const FeaturesGrid = () => {
   ];
 
   return (
-    <div className="container mx-auto py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
-        {features.map((feature, index) => (
-          <FeatureCard
-            key={index}
-            title={feature.title}
-            description={feature.description}
-          />
-        ))}
+    <div className="bg-white">
+      <div className="container mx-auto py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+          {features.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              title={feature.title}
+              description={feature.description}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

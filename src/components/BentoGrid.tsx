@@ -192,9 +192,6 @@ const BentoGrid = () => {
   return (
     <div className="container mx-auto py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {/* Hero Section - Full Width */}
-        <div className="md:col-span-2 bg-[#2797FE] rounded-3xl p-8 h-72"></div>
-
         {/* Two Column Section */}
         <div className="bg-white rounded-3xl p-8 flex flex-col items-center justify-center text-center">
           <ProgressCircle />
@@ -238,9 +235,6 @@ const BentoGrid = () => {
             </button>
           </div>
         </div>
-
-        {/* Bottom Section - Full Width */}
-        <div className="md:col-span-2 bg-purple-500 rounded-3xl p-8 h-80"></div>
       </div>
     </div>
   );

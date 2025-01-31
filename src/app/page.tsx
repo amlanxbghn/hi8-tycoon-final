@@ -19,11 +19,11 @@ export default function Home() {
       <VideoHand />
       <ServicesGrid />
       <Features />
-      <Chat />
       <BentoGrid />
+      <FeaturesGrid />
+      <Chat />
       <SecurityPage />
       <PocketHero />
-      <FeaturesGrid />
     </>
   );
 }
