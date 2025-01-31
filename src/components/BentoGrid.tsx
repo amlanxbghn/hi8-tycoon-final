@@ -78,7 +78,7 @@ const BentoGrid = () => {
           </h2>
         </div>
 
-        <div className="bg-[#E17B4F] rounded-3xl p-8 flex flex-col h-full">
+        <div className="bg-[#FA9214] rounded-3xl p-8 flex flex-col h-full">
           <div className="flex flex-col h-full">
             <h2 className="text-white text-5xl font-semibold leading-tight mb-4">
               Partner with Hi8 and watch your brand soar.

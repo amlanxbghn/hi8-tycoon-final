@@ -2,24 +2,24 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="container mx-auto py-12">
+    <div className="bg-white">
+      <div className="container mx-auto pt-4 md:pt-12">
         <div className="flex flex-col sm:flex-row gap-8 lg:gap-16">
           <div className="sm:w-1/4">
-            <h2 className="text-2xl lg:text-4xl font-semibold text-gray-900 mb-8 sm:mb-0">
-              About us
+            <h2 className="lg:text-2xl font-bold text-gray-900">
+              ABOUT US
             </h2>
           </div>
-          
+
           <div className="sm:w-3/4">
-            <div className="space-y-12 bg-gradient-to-br from-yellow-400 via-orange-500 to-[#FF0012] text-transparent bg-clip-text pb-8">
-              <p className="text-3xl md:text-4xl lg:text-6xl font-medium leading-tight">
-                Hi8 is a youth-driven marketing agency transforming how brands
-                connect with consumers. We blend creativity and digital expertise
-                to engage the new generation.
+            <div className="space-y-12 bg-gradient-to-br from-[#FA9214] via-orange-500 to-[#FF0012] text-transparent bg-clip-text pb-4 md:pb-12">
+              <p className="text-3xl md:text-4xl lg:text-6xl font-medium leading-tighter">
+                Hi8 is a marketing agency driven by young-creatives transforming
+                how brands connect with consumers. We blend creativity and
+                digital expertise to engage with the new generation.
               </p>
-              
-              <p className="text-3xl md:text-4xl lg:text-6xl font-medium leading-tight">
+
+              <p className="text-3xl md:text-4xl lg:text-6xl font-medium leading-tighter">
                 Our disruptive campaigns help brands stand out, lead in their
                 industries, and stay ahead in a fast-changing digital world.
               </p>

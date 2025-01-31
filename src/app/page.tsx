@@ -9,6 +9,7 @@ import About from "@/components/About";
 import SecurityPage from "@/components/SecurityPage";
 import VideoHand from "@/components/VideoHand";
 import SuccessPage from "@/components/Success";
+import ServicesGrid from "@/components/ServicesGrid";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <About />
       <SuccessPage />
+      <ServicesGrid />
       <VideoHand />
       <Features />
       <BentoGrid />
