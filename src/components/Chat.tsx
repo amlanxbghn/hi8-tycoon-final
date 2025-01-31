@@ -68,13 +68,13 @@ const Chat = () => {
 
   return (
     <div className="min-h-screen container mx-auto py-12">
-      <div className="max-w-3xl mx-auto mb-14">
+      <div className="max-w-3xl mx-auto mb-12">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900">
           Seamless Onboarding
         </h1>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight bg-gradient-to-br from-[#FA9214] via-orange-500 to-[#FF0012] text-transparent bg-clip-text">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight bg-gradient-to-br from-[#FA9214] via-orange-500 to-[#F90200] text-transparent bg-clip-text">
           Start Your Project within Minutes.
-        </h2>
+        </h1>
       </div>
 
       <div className="max-w-3xl mx-auto space-y-6">
@@ -111,7 +111,7 @@ const Chat = () => {
         </AnimatedMessage>
 
         <AnimatedMessage delay={messageDelay * 5}>
-          <div className="text-[#FF0012] font-medium mb-2">
+          <div className="text-[#F90200] font-medium mb-2">
             ✦ Based on your brand's current approach
           </div>
           <p className="text-lg md:text-2xl font-medium text-gray-900">

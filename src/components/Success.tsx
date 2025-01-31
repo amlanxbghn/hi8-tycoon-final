@@ -68,7 +68,7 @@ const SuccessPage = () => {
     return (
       <div ref={elementRef} className="flex items-center">
         {count}
-        <span className="text-[#FF0012]">+</span>
+        <span className="text-[#F90200]">+</span>
       </div>
     );
   };

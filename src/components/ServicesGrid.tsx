@@ -30,7 +30,7 @@ const ServicesGrid = () => {
       title: 'WEB DESIGN\n& DEVELOPMENT',
       description: 'CRAFTING UNIQUE AND\nMEMORABLE BRAND IDENTITIES',
       featured: false,
-      gradient: 'bg-orange-600'
+      gradient: 'bg-[#F90200]'
     },
     {
       title: 'CONTENT\nMARKETING',

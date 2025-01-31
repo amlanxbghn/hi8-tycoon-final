@@ -78,7 +78,7 @@ const BentoGrid = () => {
           </h2>
         </div>
 
-        <div className="bg-gradient-to-br from-[#FA9214] via-orange-500 to-[#FF0012] rounded-3xl p-8 lex flex-col h-full">
+        <div className="bg-gradient-to-br from-[#FA9214] via-orange-500 to-[#F90200] rounded-3xl p-8 lex flex-col h-full">
           <div className="flex flex-col h-full">
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tighter mb-4">
               Partner with Hi8 <br/>and watch your Brand soar.
