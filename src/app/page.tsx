@@ -8,6 +8,7 @@ import VideoHand from "@/components/VideoHand";
 import SuccessPage from "@/components/Success";
 import ServicesGrid from "@/components/ServicesGrid";
 import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Chat />
       {/* <FeaturesGrid /> */}
       <FAQ />
+      <Footer />
     </>
   );
 }
