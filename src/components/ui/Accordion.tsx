@@ -15,7 +15,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer, isFirst
 
   return (
     <motion.div
-      className="mb-8 bg-gray-100 rounded-xl overflow-hidden"
+      className="bg-gray-100 rounded-xl overflow-hidden"
       initial={false}
       animate={{ height: isOpen ? "auto" : "auto" }}
       transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
@@ -65,7 +65,7 @@ interface AccordionProps {
 
 const Accordion = ({ items }: AccordionProps) => {
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto space-y-4">
       {items.map((item, index) => (
         <AccordionItem
           key={index}

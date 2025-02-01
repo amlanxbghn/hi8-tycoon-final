@@ -10,6 +10,7 @@ import ServicesGrid from "@/components/ServicesGrid";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import CTAImage from "@/components/CTAImage";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Chat />
       <About />
       <FAQ />
+      <CTAImage />
       <Footer />
     </>
   );

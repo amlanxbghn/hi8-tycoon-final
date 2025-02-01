@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowUpRight, SquareCheckBig } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Tag from "./ui/Tag";
 import Accordion from "./ui/Accordion";
 
@@ -41,20 +41,18 @@ const FAQ = () => {
     <div className="bg-white py-16 lg:py-24">
       <div className="container mx-auto">
         <div className="flex flex-col sm:flex-row gap-8 lg:gap-16">
-          <div className="sm:w-1/4 flex flex-col justify-between">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900">
-              Frequently Asked{" "}
-              <span className="bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text">
-                Questions
-              </span>
-            </h1>
-
-            <div className="text-zinc-500">
+          <div className="sm:w-1/4 flex flex-col">
+            <div className="flex flex-col h-full">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900">
+                Frequently Asked{" "}
+                <span className="bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text">
+                  Questions
+                </span>
+              </h1>
+            </div>
+            <div className="text-zinc-500 sm:hidden mt-8">
               Got more questions? We're just a message away.{" "}
-              <a
-                href="#"
-                className="text-[#FF0012] inline-flex items-center group"
-              >
+              <a href="#" className="text-[#FF0012] inline-flex items-center group">
                 Reach Out to Us
                 <span className="relative w-5 h-5 overflow-hidden ml-1 flex items-center">
                   <span className="transition-transform duration-300 absolute inset-0 translate-y-full group-hover:translate-y-0 flex items-center justify-center">
@@ -68,8 +66,22 @@ const FAQ = () => {
             </div>
           </div>
 
-          <div className="sm:w-3/4">
+          <div className="sm:w-3/4 relative">
             <Accordion items={faqItems} />
+            <div className="hidden sm:block text-zinc-500 mt-4">
+              Got more questions? We're just a message away.{" "}
+              <a href="#" className="text-[#FF0012] inline-flex items-center group">
+                Reach Out to Us
+                <span className="relative w-5 h-5 overflow-hidden ml-1 flex items-center">
+                  <span className="transition-transform duration-300 absolute inset-0 translate-y-full group-hover:translate-y-0 flex items-center justify-center">
+                    <ArrowUpRight size={20} />
+                  </span>
+                  <span className="transition-transform duration-300 absolute inset-0 group-hover:-translate-y-full flex items-center justify-center">
+                    <ArrowUpRight size={20} />
+                  </span>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

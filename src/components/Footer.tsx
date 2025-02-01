@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="w-full px-4 py-6 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+    <footer className="container py-4">
+      <div className="">
         {/* Desktop View */}
         <div className="hidden md:flex items-center justify-between text-gray-500">
           <div className="flex items-center space-x-6">
@@ -27,8 +27,9 @@ const Footer: React.FC = () => {
               </Link>
             ))}
           </div>
-          <div className="bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text">
-            Made with love by Hi8
+          <div className="flex items-center space-x-2 bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text">
+            <span>Made with love by</span>
+            <img src="/hi8Logo.svg" alt="hi8 Logo" className='w-12 h-auto'/>
           </div>
         </div>
 
@@ -53,8 +54,9 @@ const Footer: React.FC = () => {
           
           <span>{currentYear} © Hi8 Agency</span>
           
-          <div className="bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text">
-            Made with love by Hi8
+          <div className="flex items-center space-x-2 bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text">
+            <span>Made with love by</span>
+            <img src="/hi8Logo.svg" alt="hi8 Logo" className='w-10 h-auto'/>
           </div>
         </div>
       </div>
