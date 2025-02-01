@@ -192,10 +192,10 @@ const BentoGrid = () => {
   return (
     <div className="container mx-auto py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {/* Two Column Section */}
-        <div className="bg-white rounded-3xl p-8 flex flex-col items-center justify-center text-center">
+        {/* Left-aligned card with justified content */}
+        <div className="bg-white rounded-3xl p-8 flex flex-col items-start justify-between h-full">
           <ProgressCircle />
-          <h2 className="mt-8 text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tighter md:max-w-lg mx-auto">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tighter">
             75% of all businesses miss out on their true marketing potential.
             <br />
             <span className="text-4xl text-emerald-500">

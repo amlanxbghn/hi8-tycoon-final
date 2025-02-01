@@ -40,14 +40,8 @@ const FAQ = () => {
   return (
     <div className="bg-white py-12">
       <div className="container mx-auto">
-        {/* <div className="flex justify-start mb-6">
-                    <Tag variant="orange" className="md:text-lg" icon={<SquareCheckBig className="w-5 h-5" />}>
-                        We've Got You Covered
-                    </Tag>
-                </div> */}
-
         <div className="flex flex-col sm:flex-row gap-8 lg:gap-16">
-          <div className="sm:w-1/4">
+          <div className="sm:w-1/4 flex flex-col justify-between">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900">
               Frequently Asked{" "}
               <span className="bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text">
@@ -55,7 +49,7 @@ const FAQ = () => {
               </span>
             </h1>
 
-            <div className="mt-8 text-zinc-500">
+            <div className="text-zinc-500">
               Got more questions? We're just a message away.{" "}
               <a
                 href="#"
