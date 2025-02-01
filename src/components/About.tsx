@@ -14,14 +14,13 @@ const About = () => {
           <div className="sm:w-3/4">
             <div className="space-y-12 bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text pb-16 lg:pb-24">
               <p className="text-3xl md:text-4xl lg:text-6xl font-medium leading-tighter">
-                We are a young-creatives led marketing agency transforming
-                how brands connect with consumers. We blend creativity and
-                digital expertise to engage with the new generation.
+               We help you grow your business by creating engaging and effective social media campaigns that drive leads and sales.
+               
               </p>
 
               <p className="text-3xl md:text-4xl lg:text-6xl font-medium leading-tighter">
-                Our disruptive campaigns help brands stand out, lead in their
-                industries, and stay ahead in a fast-changing digital world.
+               We help you take your business online, from setting up your website, to creating online sales channel
+               and everything in between.
               </p>
             </div>
           </div>

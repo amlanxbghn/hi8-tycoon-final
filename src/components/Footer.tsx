@@ -7,7 +7,6 @@ const Footer: React.FC = () => {
   const links = [
     { href: '/careers', label: 'Careers' },
     { href: '/privacy-policy', label: 'Privacy policy' },
-    { href: '/money-back-policy', label: 'Money-back policy' },
     { href: '/terms', label: 'Terms of use' },
   ];
 
@@ -36,10 +35,10 @@ const Footer: React.FC = () => {
         {/* Mobile View */}
         <div className="md:hidden flex flex-col space-y-3 text-gray-500">
           <Link
-            href="https://sovrn.co/1q82a87"
+            href="https://www.hi8.space/"
             className="text-gray-500 hover:text-gray-700"
           >
-            https://sovrn.co/1q82a87
+            https://www.hi8.space/
           </Link>
           
           {links.map((link) => (

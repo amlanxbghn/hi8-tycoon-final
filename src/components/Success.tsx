@@ -77,7 +77,7 @@ const SuccessPage = () => {
     <div className="container mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
         {metrics.map((metric, index) => (
-          <div key={index} className="bg-white rounded-3xl p-6">
+          <div key={index} className="bg-white rounded-3xl py-6 shadow-sm">
             <div className="flex flex-col items-center text-center gap-2">
               <div className="text-3xl md:text-4xl lg:text-6xl font-medium leading-tight">
                 <AnimatedNumber number={metric.number} />

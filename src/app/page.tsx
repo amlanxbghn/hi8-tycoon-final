@@ -9,19 +9,21 @@ import SuccessPage from "@/components/Success";
 import ServicesGrid from "@/components/ServicesGrid";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <>
+      <Navbar />
       <Hero />
-      <About />
       <SuccessPage />
       <VideoHand />
       <ServicesGrid />
       <BentoGrid />
       <Features />
+      <FeaturesGrid />
       <Chat />
-      {/* <FeaturesGrid /> */}
+      <About />
       <FAQ />
       <Footer />
     </>

@@ -2,46 +2,64 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="container py-16 lg:py-24">
-      <div className="mx-auto bg-white rounded-3xl p-4 md:p-8">
-        <div className="flex flex-col items-center text-center">
-          {/* Two-line heading instead of three */}
-          <h1 className="text-4xl md:text-5xl lg:text-7xl tracking-tight leading-tight font-medium max-w-4xl mb-8">
-            Elevate your story <br/>to new Heightsss
+    <div className="px-4">
+      <div className="bg-white rounded-3xl shadow-sm">
+        <div className="container mx-auto pt-8 pb-4 flex flex-col">
+          {/* Main Heading - Centered on tablet */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-tighter mb-8 md:text-center lg:text-left">
+            Infinity Starts at Hi,
+            <br />
+            and we take you <span className="bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text">Higher</span>
           </h1>
 
-          {/* Subheading with correct styling */}
-          <p className="text-lg md:text-[23px] text-gray-600 mb-10">
-            Bringing your Brand to Life, One Platform at a Time
-          </p>
+          <div className="flex flex-col lg:flex-row gap-4">
+            {/* Left Column - Full width on mobile/tablet, 1/4 on desktop */}
+            <div className="lg:w-1/4 flex flex-col justify-between gap-4">
+              <div>
+                <p className="font-medium md:text-lg leading-tighter mb-11 md:text-center lg:text-left">
+                  Our professional team is always ready to make your brand
+                  visible, audible, and noticeable
+                </p>
+                {/* Buttons - Stacked on mobile/desktop, side-by-side and centered on tablet */}
+                <div className="flex flex-col md:flex-row lg:flex-col gap-4 mb-8 md:justify-center lg:justify-start">
+                  <button className="px-6 py-4 font-medium md:text-lg rounded-xl border border-gray-200 bg-white hover:bg-gray-50 transition-colors">
+                    View Previous Works
+                  </button>
+                  <button className="px-6 py-4 font-medium md:text-lg rounded-xl bg-[#F90200] text-white hover:bg-[#e00200] transition-colors">
+                    Schedule a Call
+                  </button>
+                </div>
+              </div>
 
-          {/* Button Group with exact styling */}
-          <div className="flex flex-wrap justify-center gap-2">
-            <button className="w-50 px-8 py-2.5 rounded-xl bg-white text-lg font-medium border border-gray-200 hover:bg-gray-50 transition-colors">
-              View Works
-            </button>
-            <button className="w-50 px-8 py-2.5 rounded-xl bg-[#FF0012] text-white text-lg font-medium hover:bg-[#C4321F] transition-colors">
-              Schedule a Call
-            </button>
+              {/* Video */}
+              <div className="rounded-3xl overflow-hidden aspect-video w-full">
+                <video
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/heroVideo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            {/* Right Column - Full width on mobile/tablet, 3/4 on desktop */}
+            <div className="lg:w-3/4 flex flex-col justify-between">
+              <div className="rounded-3xl overflow-hidden aspect-video w-full">
+                <img 
+                  src="/heroImage.jpg" 
+                  alt="Hero" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="mx-auto relative">
-        <div className="rounded-3xl overflow-hidden">
-          <video
-            className="w-full h-auto"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="/api/placeholder/1280/720"
-          >
-            <source src="/heroVideo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </section>
+    </div>
   );
 };
 

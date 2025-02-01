@@ -193,7 +193,7 @@ const BentoGrid = () => {
     <div className="container mx-auto py-16 lg:py-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Left-aligned card with justified content */}
-        <div className="bg-white rounded-3xl p-8 flex flex-col items-start justify-between h-full">
+        <div className="bg-white rounded-3xl shadow-sm p-8 flex flex-col items-start justify-between h-full">
           <ProgressCircle />
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tighter">
             75% of all businesses miss out on their true marketing potential.
@@ -204,7 +204,7 @@ const BentoGrid = () => {
           </h2>
         </div>
 
-        <div className="bg-gradient-to-br from-[#FA9214] to-[#F90200] rounded-3xl">
+        <div className="bg-gradient-to-br from-[#FA9214] to-[#F90200] rounded-3xl shadow-sm">
           <div className="p-8">
             <div>
               <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tighter mb-4">

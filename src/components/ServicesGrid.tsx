@@ -94,7 +94,7 @@ const ServicesGrid = () => {
 
     return (
       <div
-        className={`relative overflow-hidden rounded-3xl h-full ${service.backgroundColor}`}
+        className={`relative overflow-hidden rounded-3xl shadow-sm h-full ${service.backgroundColor}`}
       >
         <div className={`h-full flex flex-col ${service.textColor}`}>
           <div className="px-4 md:px-8 pt-4 md:pt-8">
@@ -153,7 +153,7 @@ const ServicesGrid = () => {
         {features.map((feature) => (
           <div
             key={feature}
-            className="bg-white border border-white/10 inline-flex px-3 md:px-5 py-1.5 md:py-2 rounded-2xl gap-3 items-center hover:scale-105 transition duration-500 group"
+            className="bg-white border border-white/10 inline-flex px-3 md:px-5 py-1.5 md:py-2 rounded-2xl shadow-sm gap-3 items-center hover:scale-105 transition duration-500 group"
           >
             <span className="bg-gradient-to-br from-[#FA9214] to-[#F90200] text-white size-7 rounded-full inline-flex items-center justify-center text-xl group-hover:rotate-45 transition duration-500">
               ✦
