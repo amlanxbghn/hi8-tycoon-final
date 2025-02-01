@@ -52,7 +52,7 @@ const FAQ = () => {
             </div>
             <div className="text-zinc-500 sm:hidden mt-8">
               Got more questions? We're just a message away.{" "}
-              <a href="#" className="text-[#FF0012] inline-flex items-center group">
+              <a href="mailto:info@hi8.apace" className="text-[#FF0012] inline-flex items-center group">
                 Reach Out to Us
                 <span className="relative w-5 h-5 overflow-hidden ml-1 flex items-center">
                   <span className="transition-transform duration-300 absolute inset-0 translate-y-full group-hover:translate-y-0 flex items-center justify-center">
@@ -70,7 +70,7 @@ const FAQ = () => {
             <Accordion items={faqItems} />
             <div className="hidden sm:block text-zinc-500 mt-4">
               Got more questions? We're just a message away.{" "}
-              <a href="#" className="text-[#FF0012] inline-flex items-center group">
+              <a href="mailto:info@hi8.apace" className="text-[#FF0012] inline-flex items-center group">
                 Reach Out to Us
                 <span className="relative w-5 h-5 overflow-hidden ml-1 flex items-center">
                   <span className="transition-transform duration-300 absolute inset-0 translate-y-full group-hover:translate-y-0 flex items-center justify-center">

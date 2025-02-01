@@ -63,7 +63,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <div className="w-full bg-white py-16 lg:py-24">
+    <div id="advantages" className="w-full bg-white py-16 lg:py-24">
       <div className="container mx-auto">
         <div className="md:text-center mb-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900">

@@ -65,6 +65,10 @@ const ServicesGrid = () => {
   const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
     const titleRef = useRef<HTMLHeadingElement>(null);
 
+    const handleArrowClick = () => {
+      window.open('https://calendly.com/sub-hi8/30min', '_blank');
+    };
+
     useEffect(() => {
       if (service.title !== 'Explore Our Services') return;
 
@@ -94,6 +98,7 @@ const ServicesGrid = () => {
 
     return (
       <div
+        id='services'
         className={`relative overflow-hidden rounded-3xl shadow-sm h-full ${service.backgroundColor}`}
       >
         <div className={`h-full flex flex-col ${service.textColor}`}>
@@ -120,7 +125,10 @@ const ServicesGrid = () => {
               <p className="font-medium md:text-lg flex-1">
                 {service.description}
               </p>
-              <div className="relative w-8 h-8 md:w-12 md:h-12 group overflow-hidden cursor-pointer flex-shrink-0">
+              <div 
+                onClick={handleArrowClick}
+                className="relative w-8 h-8 md:w-12 md:h-12 group overflow-hidden cursor-pointer flex-shrink-0"
+              >
                 <div className="transition-transform duration-300 absolute inset-0 translate-y-full group-hover:translate-y-0">
                   <ArrowUpRight className="w-8 h-8 md:w-12 md:h-12" />
                 </div>

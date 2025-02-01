@@ -11,10 +11,12 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import CTAImage from "@/components/CTAImage";
+import { Banner } from "@/components/Banner";
 
 export default function Home() {
   return (
     <>
+      <Banner />
       <Navbar />
       <Hero />
       <SuccessPage />

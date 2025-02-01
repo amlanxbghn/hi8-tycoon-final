@@ -5,9 +5,9 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   
   const links = [
-    { href: '/careers', label: 'Careers' },
-    { href: '/privacy-policy', label: 'Privacy policy' },
-    { href: '/terms', label: 'Terms of use' },
+    { href: 'https://www.linkedin.com/company/hi8agency/jobs/', label: 'Careers' },
+    { href: 'https://docs.google.com/document/d/1GDwbOInZubLNVc2-4gL4EhTN5-sGCLTYuF99WQfTm3o/edit?usp=sharing', label: 'Privacy policy' },
+    { href: 'https://docs.google.com/document/d/1IXTa0Lkyhvizqc8a7RH3caOajPy1LQV9-mPUzn4GPTI/edit?usp=sharing', label: 'Terms of use' },
   ];
 
   return (
@@ -22,6 +22,8 @@ const Footer: React.FC = () => {
                 key={link.label}
                 href={link.href}
                 className="hover:text-gray-700 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {link.label}
               </Link>
@@ -47,6 +49,8 @@ const Footer: React.FC = () => {
               key={link.label}
               href={link.href}
               className="hover:text-gray-700 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {link.label}
             </Link>

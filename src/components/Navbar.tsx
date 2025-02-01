@@ -11,10 +11,10 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { title: "Home", href: "#" },
-    { title: "About", href: "#" },
-    { title: "Services", href: "#" },
-    { title: "Contact", href: "#" },
+    { title: "About", href: "#about" },
+    { title: "Serviecs", href: "#services" },
+    { title: "Advantages", href: "#advantages" },
+    { title: "Contact", href: "#contact" },
   ];
 
   return (
@@ -40,9 +40,15 @@ const Navbar = () => {
                   {link.title}
                 </a>
               ))}
-              <button className="bg-[#F90200] text-white hover:bg-[#e00200] transition-colors px-4 py-2 rounded-lg font-medium md:text-lg leading-tighter">
-                Schedule a Call
-              </button>
+              <a
+                href="https://calendly.com/sub-hi8/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-[#F90200] text-white hover:bg-[#e00200] transition-colors px-4 py-2 rounded-lg font-medium md:text-lg leading-tighter">
+                  Schedule a Call
+                </button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -73,9 +79,15 @@ const Navbar = () => {
                     {link.title}
                   </a>
                 ))}
-                <button className="w-full mt-2 bg-[#F90200] text-white hover:bg-[#e00200] transition-colors px-4 py-2 rounded-lg font-medium md:text-lg leading-tighter">
-                  Schedule a Call
-                </button>
+                <a
+                  href="https://calendly.com/sub-hi8/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="w-full mt-2 bg-[#F90200] text-white hover:bg-[#e00200] transition-colors px-4 py-2 rounded-lg font-medium md:text-lg leading-tighter">
+                    Schedule a Call
+                  </button>
+                </a>
               </div>
             </div>
           )}

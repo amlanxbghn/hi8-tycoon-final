@@ -2,7 +2,7 @@ import React from 'react';
 
 const CTAImage = () => {
   return (
-    <div className="flex flex-col max-w-3xl mx-auto">
+    <div id='contact' className="flex flex-col max-w-3xl mx-auto">
       <div className="w-full pb-6 pt-16 lg:pt-24">
         <img src="/appleTogether.svg" alt="Apple Together" className="w-full" />
       </div>
