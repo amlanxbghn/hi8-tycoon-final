@@ -67,7 +67,7 @@ const Chat = () => {
   const messageDelay = 100;
 
   return (
-    <div className="min-h-screen container mx-auto py-12">
+    <div className="min-h-screen container mx-auto py-16 lg:py-24">
       <div className="max-w-3xl mx-auto mb-12">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900">
           Seamless Onboarding

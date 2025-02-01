@@ -42,7 +42,7 @@ const ServicesGrid = () => {
       featured: false,
       backgroundColor: 'bg-white',
       textColor: 'text-black',
-      textStyle: '',
+      textStyle: 'text-2xl md:text-3xl lg:text-4xl font-semibold',
     },
     {
       title: 'Web Design\n& Development',
@@ -50,7 +50,7 @@ const ServicesGrid = () => {
       featured: false,
       backgroundColor: 'bg-gradient-to-br from-[#FA9214] to-[#F90200]',
       textColor: 'text-white',
-      textStyle: '',
+      textStyle: 'text-2xl md:text-3xl lg:text-4xl font-semibold',
     },
     {
       title: 'Content\nMarketing',
@@ -58,7 +58,7 @@ const ServicesGrid = () => {
       featured: false,
       backgroundColor: 'bg-white',
       textColor: 'text-black',
-      textStyle: '',
+      textStyle: 'text-2xl md:text-3xl lg:text-4xl font-semibold',
     },
   ];
 
@@ -107,7 +107,7 @@ const ServicesGrid = () => {
                 <span className="bg-gradient-to-br from-[#FA9214] via-[#F90200] to-[#F90200] text-transparent bg-clip-text">Services</span>
               </h2>
             ) : (
-              <h2 className={`text-2xl lg:text-4xl font-semibold tracking-tight leading-tight whitespace-pre-line ${service.textStyle || ''}`}>
+              <h2 className={`text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight leading-tight whitespace-pre-line ${service.textStyle || ''}`}>
                 {service.title}
               </h2>
             )}
@@ -136,7 +136,7 @@ const ServicesGrid = () => {
   };
 
   return (
-    <div className="container mx-auto py-16">
+    <div className="container mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="h-full">
           <ServiceCard service={services[0]} />

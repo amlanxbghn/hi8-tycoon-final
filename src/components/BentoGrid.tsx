@@ -190,7 +190,7 @@ const GrowthChart = () => {
 
 const BentoGrid = () => {
   return (
-    <div className="container mx-auto py-12">
+    <div className="container mx-auto py-16 lg:py-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Left-aligned card with justified content */}
         <div className="bg-white rounded-3xl p-8 flex flex-col items-start justify-between h-full">
@@ -198,7 +198,7 @@ const BentoGrid = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tighter">
             75% of all businesses miss out on their true marketing potential.
             <br />
-            <span className="text-4xl text-emerald-500">
+            <span className="text-2xl md:text-3xl lg:text-4xl bg-gradient-to-br from-emerald-400 via-emerald-500 to-emerald-600 text-transparent bg-clip-text">
               We're here to change that.
             </span>
           </h2>
@@ -210,14 +210,14 @@ const BentoGrid = () => {
               <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tighter mb-4">
                 Partner with Hi8 <br/>and watch your Brand soar.
               </h2>
-              <p className="text-white lg:text-2xl font-bold">Start a Project with Us</p>
+              <p className="text-white text-2xl md:text-3xl lg:text-4xl font-semibold">Start a Project with Us</p>
             </div>
             
             <div className="mt-8">
               <GrowthChart />
             </div>
             
-            <button className="text-white text-xl flex items-center group mt-8">
+            <button className="text-white font-medium md:text-lg flex items-center group mt-8">
               Contact Us
               <svg
                 className="w-6 h-6 ml-2 transform group-hover:translate-x-1 transition-transform"

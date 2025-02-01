@@ -15,7 +15,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer, isFirst
 
   return (
     <motion.div
-      className="mb-8 bg-white rounded-xl overflow-hidden"
+      className="mb-8 bg-gray-100 rounded-xl overflow-hidden"
       initial={false}
       animate={{ height: isOpen ? "auto" : "auto" }}
       transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}

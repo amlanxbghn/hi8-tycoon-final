@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="container py-12">
+    <section className="container py-16 lg:py-24">
       <div className="mx-auto bg-white rounded-3xl p-4 md:p-8">
         <div className="flex flex-col items-center text-center">
           {/* Two-line heading instead of three */}

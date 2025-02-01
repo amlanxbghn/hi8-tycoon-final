@@ -38,7 +38,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="py-12">
+    <div className="bg-white py-16 lg:py-24">
       <div className="container mx-auto">
         <div className="flex flex-col sm:flex-row gap-8 lg:gap-16">
           <div className="sm:w-1/4 flex flex-col justify-between">
