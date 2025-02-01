@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const navLinks = [
     { title: "About", href: "#about" },
-    { title: "Serviecs", href: "#services" },
+    { title: "Services", href: "#services" },
     { title: "Advantages", href: "#advantages" },
     { title: "Contact", href: "#contact" },
   ];
