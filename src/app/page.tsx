@@ -17,10 +17,10 @@ export default function Home() {
       <SuccessPage />
       <VideoHand />
       <ServicesGrid />
-      <Features />
       <BentoGrid />
+      <Features />
       <Chat />
-      <FeaturesGrid />
+      {/* <FeaturesGrid /> */}
       <FAQ />
     </>
   );

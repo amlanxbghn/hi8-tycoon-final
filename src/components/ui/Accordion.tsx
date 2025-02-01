@@ -15,7 +15,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer, isFirst
 
   return (
     <motion.div
-      className="mb-8 bg-zinc-100 rounded-xl overflow-hidden"
+      className="mb-8 bg-white rounded-xl overflow-hidden"
       initial={false}
       animate={{ height: isOpen ? "auto" : "auto" }}
       transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
@@ -24,16 +24,16 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer, isFirst
         className="flex items-center justify-between p-4 cursor-pointer"
         onClick={() => !isFirst && setIsOpen(!isOpen)}
       >
-        <span className="md:text-xl text-start text-[#333333] font-semibold flex-grow pr-4">
+        <span className="md:text-xl text-start text-gray-900 font-semibold flex-grow pr-4">
           {question}
         </span>
         <div className="flex-shrink-0">
           {isFirst ? (
-            <Asterisk size={24} className="text-[#FF0012]" />
+            <Asterisk size={24} className="text-[#F90200]" />
           ) : (
             <Plus
               size={24}
-              className={`text-[#FF0012] transition-transform duration-300 ${
+              className={`text-[#F90200] transition-transform duration-300 ${
                 isOpen ? 'transform rotate-45' : ''
               }`}
             />
